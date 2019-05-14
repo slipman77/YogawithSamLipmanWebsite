@@ -11,9 +11,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+				@media (max-width: 550px) {
+					.big-container {
+						display: none;
+					}
+				}
+				@media (min-width: 550px) {
+					.small-container {
+						display: none;
+					}
+				}
+				.responsive-iframe-container {
+					position: relative;
+					padding-bottom: 56.25%;
+					padding-top: 30px;
+					height: 0;
+					overflow: hidden;
+				}
+				.responsive-iframe-container iframe,
+				.vresponsive-iframe-container object,
+				.vresponsive-iframe-container embed {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+				</style>
 	</head>
+
 	<body class="is-preload">
 
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -92,7 +122,7 @@
 										<p>Contact me directly to set something up! <br /> <a href="mailto:samlipmanyoga@gmail.com"> Email me!</a></p>
 									</li>
 								</ul>
-								<!-- TODO: add embedded Google Calendar here -->
+								
 								<footer class="major">
 										
 									<h2>Yoga Teaching Google Calendar</h2>
@@ -103,10 +133,15 @@
 									<ul class="actions special">
 										<li><a href="https://calendar.google.com/calendar/b/2?cid=Z2N1b2s3dGZvZmZ1M2JucGhhbm9sM2FicGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="button">Import my Google Calendar via URL</a></li>
 									</ul>
-									<ul class="actions special">
-										
-										<iframe src="https://calendar.google.com/calendar/b/2/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Z2N1b2s3dGZvZmZ1M2JucGhhbm9sM2FicGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%230B8043&amp;title=Yoga%20With%20Sam%20Lipman&amp;mode=MONTH" style="border:solid 1px #777" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+									<ul>
+									<div class="responsive-iframe-container big-container">
+										<iframe src="https://calendar.google.com/calendar/b/2/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Z2N1b2s3dGZvZmZ1M2JucGhhbm9sM2FicGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%230B8043&amp;title=Yoga%20With%20Sam%20Lipman&amp;mode=MONTH" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+									</div>
+									<div class="responsive-iframe-container small-container">
+										<iframe src="https://calendar.google.com/calendar/b/2/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Z2N1b2s3dGZvZmZ1M2JucGhhbm9sM2FicGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%230B8043&amp;title=Yoga%20with%20Sam%20Lipman&amp;showCalendars=1&amp;mode=AGENDA" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+									</div>
 									</ul>
+									
 									<p>Click the class to confirm the location</p>
 								</footer>
 							</section>
